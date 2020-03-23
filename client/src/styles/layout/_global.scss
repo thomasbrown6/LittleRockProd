@@ -1,0 +1,181 @@
+.historylist {
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+.grid-divider {
+  margin-top: 65px;
+  margin-bottom: 65px;
+  border-top: 1px solid #cccccc;
+}
+
+ul {
+  li {
+    a {
+      color: inherit;
+      &:hover {
+        text-decoration: none;
+        border-bottom: 0;
+      }
+    }
+  }
+}
+// a:hover {
+//   text-decoration: none;
+//   border-bottom: 0;
+// }
+
+.header-image {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  box-shadow: 0px 0px 5px #ccc;
+  width: 100%;
+  max-width: 800px;
+  min-width: 300px;
+  text-align: center;
+}
+
+.event-flyers {
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+p.header {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.list {
+  margin-left: 20px;
+}
+
+.primary {
+  color: _palette(primary);
+}
+
+a.link {
+  color: _palette(secondary);
+  font-weight: bold;
+}
+
+li {
+  span.nav-link:hover {
+    color: _palette(secondary);
+    cursor: pointer;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.header-text {
+  font-size: 80px;
+  font-family: "trajan-pro-3";
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: _palette(secondary);
+  text-shadow: 0px 0px 10px #222;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+header > h1,
+h2 {
+  text-align: center !important;
+}
+
+.left {
+  text-align: left !important;
+}
+
+.image-gallery-left-nav,
+.image-gallery-right-nav {
+  padding: 13px 15px !important;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+  box-shadow: none;
+}
+
+.generous_section {
+  .generous_btn {
+    width: 500px;
+    p {
+      font-size: 32px;
+      padding: 0;
+    }
+  }
+
+  .generous_text {
+    img {
+      width: 220px;
+      margin-top: 25px;
+      transform: rotate(1deg);
+    }
+  }
+}
+
+.image-gallery-thumbnails {
+  display: none;
+}
+
+.wd100 {
+  width: 100%;
+}
+
+a.btn {
+  background: _palette(primary);
+  color: _palette(secondary) !important;
+  font-size: 32px;
+  padding: 0;
+  width: 500px;
+  p {
+  }
+}
+
+section#two {
+  background: _palette(secondary) !important;
+}
+
+.card {
+  .card-img {
+    width: 15em;
+  }
+}
+
+.react-pdf__Page__canvas {
+  margin: 0 auto;
+}
+
+.pdf-button-wrapper {
+  width: 100%;
+  display: inline-block;
+}
+
+.pdf-button {
+  display: inline-block;
+  // margin: 0 auto;
+}
+
+.mtop-4 {
+  margin-top: 4rem;
+}
+
+.mtop-8 {
+  margin-top: 8rem;
+}

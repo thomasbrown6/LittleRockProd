@@ -1,0 +1,111 @@
+///
+/// Forty by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Menu 2 */
+
+#menu2 {
+    @include vendor('display', 'flex');
+    //background-color: _palette(bg-alt);
+    background-color: _palette(secondary);
+    background-image: linear-gradient(to right, _palette(secondary), white);
+    cursor: default;
+    font-weight: _font(weight-bold);
+    height: 1.5em;
+    left: 0;
+    letter-spacing: _font(letter-spacing-alt);
+    line-height: 1.25em;
+    margin: 0;
+    text-transform: uppercase;
+    top: 0;
+    width: 100%;
+    z-index: _misc(z-index-base);
+    position: relative;
+
+    .menu2-container {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    ul.top-menu {
+        left: 0;
+        list-style: none;
+        font-size: 0.7em;
+        display: inherit;
+        letter-spacing: normal;
+        padding-left: 92px;
+        white-space: nowrap;
+
+        li {
+            padding: 0 20px;
+            >a {
+                border: none;
+                color: _palette(primary);
+            }
+            > a:hover {
+                color: black!important;
+            }
+        }
+    }
+
+    .spacer {
+        width: 30vw;
+    }
+
+    ul.icons {
+        //top: 0;
+        //right: 0;
+        position: relative;
+        float: right;
+        //margin: 2px 220px 0 0;
+        color: _palette(primary);
+
+        li {
+            padding: 0 18px;
+           > a:hover {
+                color: black!important;
+            }
+       }
+    }
+
+    @include breakpoint(small) {
+        ul.top-menu {
+            left: 0;
+            list-style: none;
+            font-size: 0.7em;
+            display: inherit;
+            letter-spacing: normal;
+            padding-left: 0;
+            white-space: nowrap;
+    
+            li {
+                padding: 0 4px;
+                >a {
+                    border: none;
+                    color: _palette(primary);
+                }
+                > a:hover {
+                    color: black!important;
+                }
+            }
+        }
+
+        ul.icons {
+            position: relative;
+            float: right;
+            color: _palette(primary);
+    
+            li {
+                padding: 0 8px;
+           }
+        }
+    }
+}
+
+@include breakpoint(small) {
+    #wrapper {
+        padding-top: 0;
+    }
+}

@@ -1,0 +1,100 @@
+.breadcrumb-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: _palette(primary);
+    box-shadow: 0px 2px 15px #333;
+    position: relative;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+
+    &:after {
+        clear: both;
+    }
+
+    &:before {
+        content: "";
+        display: block;
+        overflow: hidden;
+    }
+
+    .breadcrumb-grid {
+        padding-left: 0px;
+        width: 100%;
+        box-sizing: border-box;
+
+        .breadcrumb-panel {
+            border: 0px solid #fff!important;
+            margin-bottom: 0;
+            padding: 0px 0px;
+            background: transparent;
+            display: inline-block;
+            position: relative;
+
+            &:before {
+                content: "";
+                display: table;
+            }
+
+            &:after {
+                clear: both;
+            }
+
+            ul.breadcrumb {
+                margin: 15px auto!important;
+                background: inherit;
+                text-align: center;
+                font-size: 22px;
+                font-weight: 300;
+                color: #fff;
+                padding: 0;
+                list-style: none;
+                text-transform: uppercase;
+                width: auto;
+
+                li {
+                    text-align: center;
+                    font-size: 22px;
+                    //font-family: "soleil";
+                    font-weight: bold;
+                    color: #fff;
+
+                    display: inline-block;
+                    vertical-align: top;
+                    line-height: 1.3;
+
+                    &:before {
+                        display: inline-block;
+                        margin: 0 30px;
+                        color: #fff;
+                        height: 10px;
+                    }
+
+                    a {
+                        text-align: center;
+                        font-size: 22px;
+                        font-weight: 300;
+                        color: #fff;
+
+                        display: inline-block;
+
+                        text-decoration: none;
+                        word-wrap: break-word;
+
+                        &:after {
+                            content: "|";
+                            display: inline-block;
+                            margin: 0 30px;
+                            color: #fff;
+                            height: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

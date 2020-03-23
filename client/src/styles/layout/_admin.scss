@@ -1,0 +1,25 @@
+div.admin-login {
+  max-width: 428px;
+  margin: 0 auto;
+  color: black;
+  font-size: 16px;
+}
+
+.MuiAvatar-circle {
+  margin: 8px;
+  background-color: _palette(primary) !important;
+}
+
+button.admin-login-btn {
+  background-color: _palette(primary) !important;
+}
+
+.MuiFormLabel-root.Mui-focused {
+  color: _palette(primary) !important;
+}
+
+.MuiOutlinedInput-root.Mui-focused {
+  .MuiOutlinedInput-notchedOutline {
+    border-color: _palette(primary) !important;
+  }
+}
