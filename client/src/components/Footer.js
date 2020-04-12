@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 const Footer = props => (
   <footer id="footer">
     <Link to="/">
-        <img
-          className="footer-image"
-          src={require("../static/images/logo2.png")}
-        />
+      <img
+        className="footer-image"
+        src={require("../static/images/logo2.png")}
+      />
     </Link>
     <div className="inner">
       {/* <Link href="/">

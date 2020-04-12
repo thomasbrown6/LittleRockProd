@@ -9,10 +9,27 @@ import {
   REGISTER_SUCCESS,
   REGISTER_FAIL,
   USER_LOADED,
+  USERS_LOADED,
   AUTH_ERROR,
   CLEAR_PROFILE,
   DELETE_USER_FAIL
 } from "./types";
+
+// Load User
+export const getUsers = () => async dispatch => {
+  try {
+    const res = await axios.get("/api/auth/users");
+
+    dispatch({
+      type: USERS_LOADED,
+      payload: res.data
+    });
+  } catch (err) {
+    dispatch({
+      type: AUTH_ERROR
+    });
+  }
+};
 
 // Load User
 export const loadUser = () => async dispatch => {

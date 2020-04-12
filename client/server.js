@@ -1,4 +1,5 @@
 const express = require("express");
+const bodyParser = require("body-parser");
 const connectDB = require("./config/cosmosdb");
 const path = require("path");
 
@@ -8,11 +9,14 @@ const app = express();
 connectDB();
 
 //Init middleware
-app.use(express.json({ extended: false }));
+//app.use(express.json({ extended: false }));
+app.use(bodyParser.urlencoded({ limit: "50mb", extended: false }));
+app.use(bodyParser.json({ limit: "50mb" }));
 
 //routes
 app.use("/api/users", require("./routes/api/users"));
 app.use("/api/auth", require("./routes/api/auth"));
+app.use("/api/events", require("./routes/api/images"));
 
 app.use(express.static(path.join(__dirname, "build")));
 

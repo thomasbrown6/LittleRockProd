@@ -62,7 +62,7 @@ const Login = ({ login, isAuthenticated }) => {
   const classes = useStyles();
 
   if (isAuthenticated) {
-    return <Redirect to="/admin/dashboard" />;
+    return <Redirect to="/admin/events/event-flyers" />;
   }
 
   return (

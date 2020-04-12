@@ -1,27 +1,47 @@
 import stylesheet from "../../styles/main.scss";
-import React, { Fragment } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import { Link, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import Header from "./Header";
+import SideNav from "../SideNav";
 import Footer from "../Footer";
 import BtnBottom from "../BtnBottom";
 
-const Layout = ({ isAuthenticated, props }) => {
+const Layout = ({ isAuthenticated, children }) => {
+  const [isMenuVisible, setMenuVisible] = useState(false);
+  const [loading, setloading] = useState("is-loading");
+  const [isSubMenuVisible, setSubMenuVisible] = useState(false);
+
+  useEffect(() => {
+    let timeoutId = setTimeout(() => {
+      setloading("");
+    }, 100);
+  }, []);
+
   if (isAuthenticated) {
     return <Redirect to="/admin/dashboard" />;
   }
+  const handleToggleMenu = () => {
+    setMenuVisible({
+      isMenuVisible: !isMenuVisible
+    });
+  };
+
+  const handleHoverMenu = () => {
+    setMenuVisible({
+      isMenuVisible: !isSubMenuVisible
+    });
+  };
 
   return (
     <Fragment>
-      <div className={`body `}>
-        <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
+      <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
 
-        <div id="wrapper">
-          <Header />
-          {props.children}
-          <Footer />
-        </div>
+      <div id="wrapper">
+        <Header onToggleMenu={handleToggleMenu} />
+        {children}
+        {/* <Footer /> */}
       </div>
     </Fragment>
   );
@@ -35,4 +55,4 @@ const mapStateToProps = state => ({
   isAuthenticated: state.auth.isAuthenticated
 });
 
-export default connect(mapStateToProps)(Layout);
+export default connect()(Layout);

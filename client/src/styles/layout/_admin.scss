@@ -23,3 +23,69 @@ button.admin-login-btn {
     border-color: _palette(primary) !important;
   }
 }
+
+nav.navbar.navbar-expand-md {
+  background-color: _palette(primary) !important;
+
+  a {
+    font-weight: bold;
+    color: white;
+  }
+
+  div {
+    ul {
+      li.dropdown {
+        a {
+          font-weight: bold;
+          color: white;
+        }
+        div.dropdown-menu {
+          background-color: _palette(primary) !important;
+
+          &:hover {
+            border-color: _palette(primary) !important;
+          }
+
+          button {
+            color: white;
+
+            &:hover {
+              background-color: _palette(primary) !important;
+              color: _palette(tricary);
+              border-color: _palette(primary) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+div.left {
+  div.row {
+    div.col-6 {
+      div.MuiFormControl-root {
+        div.MuiInput-underline:after {
+          border-bottom: 2px solid black;
+        }
+      }
+      button.MuiButtonBase-root {
+        margin-top: 300px;
+
+        &:hover {
+          color: #d9d9d9;
+        }
+      }
+    }
+  }
+}
+
+.MuiButton-containedPrimary {
+  color: #fff;
+  background-color: _palette(primary) !important;
+}
+
+.MuiButton-containedSecondary {
+  color: #fff;
+  background-color: _palette(bg) !important;
+}

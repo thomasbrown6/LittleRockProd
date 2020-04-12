@@ -8,22 +8,41 @@ export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
 export const LOGIN_FAIL = "LOGIN_FAIL";
 export const LOGOUT = "LOGOUT";
 export const USER_LOADED = "USER_LOADED";
+export const USERS_LOADED = "USERS_LOADED";
 export const AUTH_ERROR = "AUTH_ERROR";
+
 export const GET_PROFILE = "GET_PROFILE";
 export const GET_PROFILES = "GET_PROFILES";
 export const GET_REPOS = "GET_REPOS";
 export const PROFILE_ERROR = "PROFILE_ERROR";
 export const UPDATE_PROFILE = "UPDATE_PROFILE";
 export const CLEAR_PROFILE = "CLEAR_PROFILE";
+
 export const ACCOUNT_DELETED = "ACCOUNT_DELETED";
+
 export const GET_POSTS = "GET_POSTS";
 export const GET_POST = "GET_POST";
 export const POST_ERROR = "POST_ERROR";
 export const UPDATE_LIKES = "UPDATE_LIKES";
 export const ADD_POST = "ADD_POST";
 export const DELETE_POST = "DELETE_POST";
+
 export const ADD_COMMENT = "ADD_COMMENT";
 export const DELETE_COMMENT = "DELETE_COMMENT";
+
+export const GET_IMAGE = "GET_IMAGE";
+export const GET_IMAGES = "GET_IMAGES";
+export const IMAGE_ERROR = "IMAGE_ERROR";
+export const UPDATE_IMAGE = "UPDATE_IMAGE";
+export const CLEAR_IMAGE = "CLEAR_IMAGE";
+export const DELETE_IMAGE = "DELETE_IMAGE";
+
+export const GET_GOOGLEALBUM = "GET_GOOGLEALBUM";
+export const GET_GOOGLEALBUMS = "GET_GOOGLEALBUMS";
+export const GOOGLEALBUM_ERROR = "GOOGLEALBUM_ERROR";
+export const UPDATE_GOOGLEALBUM = "UPDATE_GOOGLEALBUM";
+export const CLEAR_GOOGLEALBUM = "CLEAR_GOOGLEALBUM";
+export const DELETE_GOOGLEALBUM = "DELETE_GOOGLEALBUM";
 
 export const GET_DAYCARE = "GET_DAYCARE";
 export const GET_DAYCARES = "GET_DAYCARES";

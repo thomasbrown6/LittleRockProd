@@ -81,14 +81,14 @@ class Banner extends React.Component {
                     {this.props.Breadcrumb1 != null && (
                       <li href={this.props.href1}>
                         <Link to={this.props.href1}>
-                          <a>{this.props.Breadcrumb1}</a>
+                          {this.props.Breadcrumb1}
                         </Link>
                       </li>
                     )}
                     {this.props.Breadcrumb2 != null && (
                       <li href={this.props.href2}>
                         <Link to={this.props.href2}>
-                          <a>{this.props.Breadcrumb2}</a>
+                          {this.props.Breadcrumb2}
                         </Link>
                       </li>
                     )}
@@ -96,7 +96,7 @@ class Banner extends React.Component {
                       <li href={this.props.href3}>
                         {this.props.href3 ? (
                           <Link to={this.props.href3}>
-                            <a>{this.props.Breadcrumb3}</a>
+                            {this.props.Breadcrumb3}
                           </Link>
                         ) : (
                           <span>{this.props.Breadcrumb3}</span>
@@ -106,7 +106,7 @@ class Banner extends React.Component {
                     {this.props.Breadcrumb4 != null && (
                       <li href={this.props.href4}>
                         <Link to={this.props.href4}>
-                          <a>{this.props.Breadcrumb4}</a>
+                          {this.props.Breadcrumb4}
                         </Link>
                       </li>
                     )}

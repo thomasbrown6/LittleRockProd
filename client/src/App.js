@@ -35,6 +35,11 @@ import Events from "./pages/events/event-flyers";
 import Login from "./pages/admin/Login";
 import Dashboard from "./pages/admin/Dashboard";
 import Register from "./components/auth/Register";
+import EditUsers from "./pages/admin/Users/edit-users";
+
+import AdminEvents from "./pages/admin/Pages/events/event-flyers";
+import AdminCalendar from "./pages/admin/Pages/events/calendar";
+
 import PrivateRoute from "./components/routing/PrivateRoute";
 
 //Redux
@@ -150,7 +155,22 @@ const App = () => {
             {/* ADMIN */}
             <Route exact path="/register" component={Register} />
             <Route exact path="/admin" component={Login} />
-            <Route exact path="/admin/dashboard" component={Dashboard} />
+            <PrivateRoute exact path="/admin/dashboard" component={Dashboard} />
+            <PrivateRoute
+              exact
+              path="/admin/edit-users"
+              component={EditUsers}
+            />
+            <PrivateRoute
+              exact
+              path="/admin/events/event-flyers"
+              component={AdminEvents}
+            />
+            <PrivateRoute
+              exact
+              path="/admin/events/calendar"
+              component={AdminCalendar}
+            />
           </Switch>
         </Fragment>
       </Router>

@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, Redirect } from "react-router-dom";
-import Layout from "../../components/admin/Layout";
+import Layout from "../../../components/admin/Layout";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
-import { logout } from "../../actions/auth";
+import { deleteUser, getUsers } from "../../../actions/auth";
 import { makeStyles } from "@material-ui/core/styles";
 import { Row, Col } from "react-bootstrap";
 
-const Dashboard = ({ logout, isAuthenticated }) => {
+const EditUsers = ({ deleteUser, isAuthenticated }) => {
   const [formData, setFormData] = useState({
     email: "",
     password: ""
@@ -20,7 +20,7 @@ const Dashboard = ({ logout, isAuthenticated }) => {
 
   const handleSubmit = async e => {
     e.preventDefault();
-    logout(email, password);
+    deleteUser(email, password);
   };
 
   const style = {
@@ -49,6 +49,10 @@ const Dashboard = ({ logout, isAuthenticated }) => {
 
   const classes = useStyles();
 
+  useEffect(() => {
+    getUsers();
+  }, [getUsers]);
+
   return (
     <Layout
       children={
@@ -68,8 +72,8 @@ const Dashboard = ({ logout, isAuthenticated }) => {
   );
 };
 
-Dashboard.propTypes = {
-  logout: PropTypes.func.isRequired,
+EditUsers.propTypes = {
+  deleteUser: PropTypes.func.isRequired,
   isAuthenticated: PropTypes.bool
 };
 
@@ -77,4 +81,4 @@ const mapStateToProps = state => ({
   isAuthenticated: state.auth.isAuthenticated
 });
 
-export default connect(mapStateToProps, { logout })(Dashboard);
+export default connect(mapStateToProps, { deleteUser })(EditUsers);
