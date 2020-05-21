@@ -2,7 +2,6 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://littlerockamezion-prod.azurewebsites.net",
   "dependencies": {
     "@fullcalendar/core": "^4.4.0",
     "@fullcalendar/daygrid": "^4.4.0",
@@ -55,13 +54,10 @@
     "webpack": "^4.41.5"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "server": "nodemon index.js",
-    "dev": "concurrently \"nodemon server\" \"npm run start\"",
-    "azure": "NPM_CONFIG_PRODUCTION=false npm install && npm run build && npm run start"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
