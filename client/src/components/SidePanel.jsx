@@ -20,7 +20,11 @@ class SidePanel extends React.Component {
               }
             >
               {this.props.panelImage1 != null && (
-                <img className="panel-image" src={this.props.panelImage1} />
+                <img
+                  alt=""
+                  className="panel-image"
+                  src={this.props.panelImage1}
+                />
               )}
               <h3 className="panel-title">{this.props.panelTitle1}</h3>
               <p>{this.props.p1}</p>
@@ -34,7 +38,11 @@ class SidePanel extends React.Component {
               }
             >
               {this.props.panelImage2 != null && (
-                <img className="panel-image" src={this.props.panelImage2} />
+                <img
+                  alt=""
+                  className="panel-image"
+                  src={this.props.panelImage2}
+                />
               )}
               <h3 className="panel-title">{this.props.panelTitle2}</h3>
               <p>{this.props.p2}</p>
@@ -47,7 +55,11 @@ class SidePanel extends React.Component {
               }
             >
               {this.props.panelImage3 != null && (
-                <img className="panel-image" src={this.props.panelImage3} />
+                <img
+                  alt=""
+                  className="panel-image"
+                  src={this.props.panelImage3}
+                />
               )}
               <h3 className="panel-title">{this.props.panelTitle3}</h3>
               <p>{this.props.p3}</p>
@@ -60,7 +72,11 @@ class SidePanel extends React.Component {
               }
             >
               {this.props.panelImage4 != null && (
-                <img className="panel-image" src={this.props.panelImage4} />
+                <img
+                  alt=""
+                  className="panel-image"
+                  src={this.props.panelImage4}
+                />
               )}
               <h3 className="panel-title">{this.props.panelTitle4}</h3>
               <p>{this.props.p4}</p>
@@ -73,7 +89,11 @@ class SidePanel extends React.Component {
               }
             >
               {this.props.panelImage5 != null && (
-                <img className="panel-image" src={this.props.panelImage5} />
+                <img
+                  alt=""
+                  className="panel-image"
+                  src={this.props.panelImage5}
+                />
               )}
               <h3 className="panel-title">{this.props.panelTitle5}</h3>
               <p>{this.props.p5}</p>
@@ -86,7 +106,11 @@ class SidePanel extends React.Component {
               }
             >
               {this.props.panelImage6 != null && (
-                <img className="panel-image" src={this.props.panelImage6} />
+                <img
+                  alt=""
+                  className="panel-image"
+                  src={this.props.panelImage6}
+                />
               )}
               <h3 className="panel-title">{this.props.panelTitle6}</h3>
               <p>{this.props.p6}</p>
@@ -99,7 +123,11 @@ class SidePanel extends React.Component {
               }
             >
               {this.props.panelImage7 != null && (
-                <img className="panel-image" src={this.props.panelImage7} />
+                <img
+                  alt=""
+                  className="panel-image"
+                  src={this.props.panelImage7}
+                />
               )}
               <h3 className="panel-title">{this.props.panelTitle7}</h3>
               <p>{this.props.p7}</p>
@@ -112,7 +140,11 @@ class SidePanel extends React.Component {
               }
             >
               {this.props.panelImage8 != null && (
-                <img className="panel-image" src={this.props.panelImage8} />
+                <img
+                  alt=""
+                  className="panel-image"
+                  src={this.props.panelImage8}
+                />
               )}
               <h3 className="panel-title">{this.props.panelTitle8}</h3>
               <p>{this.props.p8}</p>
@@ -125,7 +157,11 @@ class SidePanel extends React.Component {
               }
             >
               {this.props.panelImage9 != null && (
-                <img className="panel-image" src={this.props.panelImage9} />
+                <img
+                  alt=""
+                  className="panel-image"
+                  src={this.props.panelImage9}
+                />
               )}
               <h3 className="panel-title">{this.props.panelTitle9}</h3>
               <p>{this.props.p9}</p>
@@ -138,7 +174,11 @@ class SidePanel extends React.Component {
               }
             >
               {this.props.panelImage10 != null && (
-                <img className="panel-image" src={this.props.panelImage10} />
+                <img
+                  alt=""
+                  className="panel-image"
+                  src={this.props.panelImage10}
+                />
               )}
               <h3 className="panel-title">{this.props.panelTitle10}</h3>
               <p>{this.props.p10}</p>
@@ -152,7 +192,11 @@ class SidePanel extends React.Component {
               }
             >
               {this.props.panelImage11 != null && (
-                <img className="panel-image" src={this.props.panelImage11} />
+                <img
+                  alt=""
+                  className="panel-image"
+                  src={this.props.panelImage11}
+                />
               )}
               <h3 className="panel-title">{this.props.panelTitle11}</h3>
               <p>{this.props.p11}</p>
@@ -166,7 +210,11 @@ class SidePanel extends React.Component {
               }
             >
               {this.props.panelImage12 != null && (
-                <img className="panel-image" src={this.props.panelImage12} />
+                <img
+                  alt=""
+                  className="panel-image"
+                  src={this.props.panelImage12}
+                />
               )}
               <h3 className="panel-title">{this.props.panelTitle12}</h3>
               <p>{this.props.p12}</p>
@@ -180,7 +228,11 @@ class SidePanel extends React.Component {
               }
             >
               {this.props.panelImage13 != null && (
-                <img className="panel-image" src={this.props.panelImage13} />
+                <img
+                  alt=""
+                  className="panel-image"
+                  src={this.props.panelImage13}
+                />
               )}
               <h3 className="panel-title">{this.props.panelTitle13}</h3>
               <p>{this.props.p13}</p>
@@ -194,7 +246,11 @@ class SidePanel extends React.Component {
               }
             >
               {this.props.panelImage14 != null && (
-                <img className="panel-image" src={this.props.panelImage14} />
+                <img
+                  alt=""
+                  className="panel-image"
+                  src={this.props.panelImage14}
+                />
               )}
               <h3 className="panel-title">{this.props.panelTitle14}</h3>
               <p>{this.props.p14}</p>
@@ -208,7 +264,11 @@ class SidePanel extends React.Component {
               }
             >
               {this.props.panelImage15 != null && (
-                <img className="panel-image" src={this.props.panelImage15} />
+                <img
+                  alt=""
+                  className="panel-image"
+                  src={this.props.panelImage15}
+                />
               )}
               <h3 className="panel-title">{this.props.panelTitle15}</h3>
               <p>{this.props.p15}</p>
@@ -222,7 +282,11 @@ class SidePanel extends React.Component {
               }
             >
               {this.props.panelImage16 != null && (
-                <img className="panel-image" src={this.props.panelImage16} />
+                <img
+                  alt=""
+                  className="panel-image"
+                  src={this.props.panelImage16}
+                />
               )}
               <h3 className="panel-title">{this.props.panelTitle16}</h3>
               <p>{this.props.p16}</p>
@@ -236,7 +300,11 @@ class SidePanel extends React.Component {
               }
             >
               {this.props.panelImage17 != null && (
-                <img className="panel-image" src={this.props.panelImage17} />
+                <img
+                  alt=""
+                  className="panel-image"
+                  src={this.props.panelImage17}
+                />
               )}
               <h3 className="panel-title">{this.props.panelTitle17}</h3>
               <p>{this.props.p17}</p>
@@ -250,7 +318,11 @@ class SidePanel extends React.Component {
               }
             >
               {this.props.panelImage18 != null && (
-                <img className="panel-image" src={this.props.panelImage18} />
+                <img
+                  alt=""
+                  className="panel-image"
+                  src={this.props.panelImage18}
+                />
               )}
               <h3 className="panel-title">{this.props.panelTitle18}</h3>
               <p>{this.props.p18}</p>
@@ -264,7 +336,11 @@ class SidePanel extends React.Component {
               }
             >
               {this.props.panelImage19 != null && (
-                <img className="panel-image" src={this.props.panelImage19} />
+                <img
+                  alt=""
+                  className="panel-image"
+                  src={this.props.panelImage19}
+                />
               )}
               <h3 className="panel-title">{this.props.panelTitle19}</h3>
               <p>{this.props.p19}</p>
@@ -278,7 +354,11 @@ class SidePanel extends React.Component {
               }
             >
               {this.props.panelImage20 != null && (
-                <img className="panel-image" src={this.props.panelImage20} />
+                <img
+                  alt=""
+                  className="panel-image"
+                  src={this.props.panelImage20}
+                />
               )}
               <h3 className="panel-title">{this.props.panelTitle20}</h3>
               <p>{this.props.p20}</p>
@@ -292,7 +372,11 @@ class SidePanel extends React.Component {
               }
             >
               {this.props.panelImage21 != null && (
-                <img className="panel-image" src={this.props.panelImage21} />
+                <img
+                  alt=""
+                  className="panel-image"
+                  src={this.props.panelImage21}
+                />
               )}
               <h3 className="panel-title">{this.props.panelTitle21}</h3>
               <p>{this.props.p21}</p>

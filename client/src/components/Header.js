@@ -15,13 +15,13 @@ class Header extends React.Component {
     this.toggle = this.toggle.bind(this);
   }
 
-  handleHover = value => {
+  handleHover = (value) => {
     this.setState({
       activeIndex: value
     });
   };
 
-  handleLeave = value => {
+  handleLeave = (value) => {
     this.setState({
       activeIndex: null
     });
@@ -58,7 +58,7 @@ class Header extends React.Component {
       <div className={`${this.state.sticky ? "sticky" : ""}`}>
         <Menu2 />
         <header id="header" className={`alt`}>
-          <a className="logo"></a>
+          <a className="logo">{} </a>
           <div className="nav-menu">
             <ul className="menu-ul">
               <li className="menu-li">
@@ -69,7 +69,7 @@ class Header extends React.Component {
 
               <li className="menu-li">
                 <span
-                  onMouseEnter={event => this.handleHover(0)}
+                  onMouseEnter={(event) => this.handleHover(0)}
                   className="nav-link"
                 >
                   Who We Are
@@ -82,7 +82,7 @@ class Header extends React.Component {
                     ? "submenu-dropdown"
                     : "submenu-dropdown hide"
                 }
-                onMouseLeave={event => this.handleLeave(0)}
+                onMouseLeave={(event) => this.handleLeave(0)}
               >
                 <DropdownMenu
                   Title_item1="Meet The Pastor"
@@ -100,7 +100,7 @@ class Header extends React.Component {
 
               <li className="menu-li">
                 <span
-                  onMouseEnter={event => this.handleHover(1)}
+                  onMouseEnter={(event) => this.handleHover(1)}
                   className="nav-link"
                 >
                   Get Connected
@@ -111,7 +111,7 @@ class Header extends React.Component {
                 className={
                   this.state.activeIndex === 1 ? "submenu-dropdown" : "hide"
                 }
-                onMouseLeave={event => this.handleLeave(1)}
+                onMouseLeave={(event) => this.handleLeave(1)}
               >
                 <DropdownMenu
                   Title_item1="Online Giving"
@@ -127,7 +127,7 @@ class Header extends React.Component {
 
               <li className="menu-li">
                 <span
-                  onMouseEnter={event => this.handleHover(2)}
+                  onMouseEnter={(event) => this.handleHover(2)}
                   className="nav-link"
                 >
                   Ministries
@@ -138,7 +138,7 @@ class Header extends React.Component {
                 className={
                   this.state.activeIndex === 2 ? "submenu-dropdown" : "hide"
                 }
-                onMouseLeave={event => this.handleLeave(2)}
+                onMouseLeave={(event) => this.handleLeave(2)}
               >
                 <DropdownMenu
                   Title_item1="Adult & Family Life"
@@ -162,7 +162,7 @@ class Header extends React.Component {
 
               <li className="menu-li">
                 <span
-                  onMouseEnter={event => this.handleHover(3)}
+                  onMouseEnter={(event) => this.handleHover(3)}
                   className="nav-link"
                 >
                   News & Events
@@ -173,17 +173,19 @@ class Header extends React.Component {
                 className={
                   this.state.activeIndex === 3 ? "submenu-dropdown" : "hide"
                 }
-                onMouseLeave={event => this.handleLeave(3)}
+                onMouseLeave={(event) => this.handleLeave(3)}
               >
                 <DropdownMenu
-                  Title_item1="Event Flyers"
-                  URL_item1="/events/event-flyers"
+                  Title_item1="Calendar"
+                  URL_item1="/events/calendar"
+                  Title_item2="Event Flyers"
+                  URL_item2="/events/event-flyers"
                 />
               </div>
 
               <li className="menu-li">
                 <span
-                  onMouseEnter={event => this.handleHover(4)}
+                  onMouseEnter={(event) => this.handleHover(4)}
                   className="nav-link"
                 >
                   Media & Resources
@@ -194,7 +196,7 @@ class Header extends React.Component {
                 className={
                   this.state.activeIndex === 4 ? "submenu-dropdown" : "hide"
                 }
-                onMouseLeave={event => this.handleLeave(4)}
+                onMouseLeave={(event) => this.handleLeave(4)}
               >
                 <DropdownMenu
                   Title_item1="Watch Online"
@@ -208,7 +210,7 @@ class Header extends React.Component {
 
               <li className="menu-li">
                 <span
-                  onMouseEnter={event => this.handleHover(5)}
+                  onMouseEnter={(event) => this.handleHover(5)}
                   className="nav-link"
                 >
                   Quick Links
@@ -219,7 +221,7 @@ class Header extends React.Component {
                 className={
                   this.state.activeIndex === 5 ? "submenu-dropdown" : "hide"
                 }
-                onMouseLeave={event => this.handleLeave(5)}
+                onMouseLeave={(event) => this.handleLeave(5)}
               >
                 <DropdownMenu
                   Title_item1="African Methodist Episcopal Zion church Website"

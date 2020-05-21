@@ -1,10 +1,10 @@
 import React from "react";
 
-const Card = props => (
+const Card = (props) => (
   <article className="card">
     <div className="card-img">
       <h3 className="center">{props.header}</h3>
-      <img src={props.image} alt="card image" />
+      <img src={props.image} alt="" />
     </div>
     <div className="card-parent-content">
       <div className="card-content">

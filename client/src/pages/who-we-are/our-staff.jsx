@@ -3,7 +3,6 @@ import Layout from "../../components/Layout";
 import Banner from "../../components/Banner";
 import Card from "../../components/Card";
 import CardWrapper from "../../components/CardWrapper";
-import { Row, Col } from "react-bootstrap";
 //import { Container, Row, Col, Card } from "react-bootstrap";
 
 export default () => (

@@ -37,8 +37,7 @@ import Dashboard from "./pages/admin/Dashboard";
 import Register from "./components/auth/Register";
 import EditUsers from "./pages/admin/Users/edit-users";
 
-import AdminEvents from "./pages/admin/Pages/events/event-flyers";
-import AdminCalendar from "./pages/admin/Pages/events/calendar";
+import Calendar from "./pages/events/calendar";
 
 import PrivateRoute from "./components/routing/PrivateRoute";
 
@@ -151,6 +150,7 @@ const App = () => {
 
             {/* EVENTS */}
             <Route exact path="/events/event-flyers" component={Events} />
+            <Route exact path="/events/calendar" component={Calendar} />
 
             {/* ADMIN */}
             <Route exact path="/register" component={Register} />
@@ -160,16 +160,6 @@ const App = () => {
               exact
               path="/admin/edit-users"
               component={EditUsers}
-            />
-            <PrivateRoute
-              exact
-              path="/admin/events/event-flyers"
-              component={AdminEvents}
-            />
-            <PrivateRoute
-              exact
-              path="/admin/events/calendar"
-              component={AdminCalendar}
             />
           </Switch>
         </Fragment>

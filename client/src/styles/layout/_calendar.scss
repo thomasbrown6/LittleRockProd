@@ -1,0 +1,16 @@
+/***CALENDAR***/
+div.rbc-toolbar {
+  span.rbc-btn-group {
+    button {
+      background-color: _palette(primary);
+      color: white;
+    }
+    .rbc-active {
+      background-color: #d4d4d4;
+    }
+  }
+}
+
+.rbc-event {
+  background-color: _palette(primary) !important;
+}

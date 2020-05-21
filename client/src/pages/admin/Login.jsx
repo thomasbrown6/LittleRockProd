@@ -27,10 +27,10 @@ const Login = ({ login, isAuthenticated }) => {
 
   const { email, password } = formData;
 
-  const handleInputChange = e =>
+  const handleInputChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
-  const handleSubmit = async e => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     login(email, password);
   };
@@ -39,7 +39,7 @@ const Login = ({ login, isAuthenticated }) => {
     backgroundColor: "black"
   };
 
-  const useStyles = makeStyles(theme => ({
+  const useStyles = makeStyles((theme) => ({
     paper: {
       marginTop: theme.spacing(8),
       display: "flex",
@@ -62,7 +62,7 @@ const Login = ({ login, isAuthenticated }) => {
   const classes = useStyles();
 
   if (isAuthenticated) {
-    return <Redirect to="/admin/events/event-flyers" />;
+    return <Redirect to="/" />;
   }
 
   return (
@@ -84,7 +84,7 @@ const Login = ({ login, isAuthenticated }) => {
                       <form
                         className={classes.form}
                         noValidate
-                        onSubmit={e => handleSubmit(e)}
+                        onSubmit={(e) => handleSubmit(e)}
                       >
                         <TextField
                           variant="outlined"
@@ -97,7 +97,7 @@ const Login = ({ login, isAuthenticated }) => {
                           value={email}
                           autoComplete="email"
                           autoFocus
-                          onChange={e => handleInputChange(e)}
+                          onChange={(e) => handleInputChange(e)}
                         />
                         <TextField
                           variant="outlined"
@@ -110,7 +110,7 @@ const Login = ({ login, isAuthenticated }) => {
                           type="password"
                           id="password"
                           autoComplete="current-password"
-                          onChange={e => handleInputChange(e)}
+                          onChange={(e) => handleInputChange(e)}
                         />
 
                         <Button
@@ -150,7 +150,7 @@ Login.propTypes = {
   isAuthenticated: PropTypes.bool
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   isAuthenticated: state.auth.isAuthenticated
 });
 

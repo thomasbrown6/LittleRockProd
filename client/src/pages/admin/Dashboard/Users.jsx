@@ -27,10 +27,10 @@ const Users = ({ deleteUser, isAuthenticated }) => {
 
   const { email, password } = formData;
 
-  const handleInputChange = e =>
+  const handleInputChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
-  const handleSubmit = async e => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     deleteUser(email, password);
   };
@@ -39,7 +39,7 @@ const Users = ({ deleteUser, isAuthenticated }) => {
     backgroundColor: "black"
   };
 
-  const useStyles = makeStyles(theme => ({
+  const useStyles = makeStyles((theme) => ({
     paper: {
       marginTop: theme.spacing(8),
       display: "flex",
@@ -81,7 +81,7 @@ Users.propTypes = {
   isAuthenticated: PropTypes.bool
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   isAuthenticated: state.auth.isAuthenticated
 });
 

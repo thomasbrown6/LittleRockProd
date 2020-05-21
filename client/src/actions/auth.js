@@ -16,7 +16,7 @@ import {
 } from "./types";
 
 // Load User
-export const getUsers = () => async dispatch => {
+export const getUsers = () => async (dispatch) => {
   try {
     const res = await axios.get("/api/auth/users");
 
@@ -32,7 +32,7 @@ export const getUsers = () => async dispatch => {
 };
 
 // Load User
-export const loadUser = () => async dispatch => {
+export const loadUser = () => async (dispatch) => {
   if (localStorage.token) {
     setAuthToken(localStorage.token);
   }
@@ -52,7 +52,7 @@ export const loadUser = () => async dispatch => {
 };
 
 // Register User
-export const register = ({ name, email, password }) => async dispatch => {
+export const register = ({ name, email, password }) => async (dispatch) => {
   const config = {
     headers: {
       "Content-Type": "application/json"
@@ -74,7 +74,7 @@ export const register = ({ name, email, password }) => async dispatch => {
     const errors = err.response.data.errors;
 
     if (errors) {
-      errors.forEach(error => dispatch(setAlert(error.msg, "error")));
+      errors.forEach((error) => dispatch(setAlert(error.msg, "error")));
     }
 
     dispatch({
@@ -84,7 +84,7 @@ export const register = ({ name, email, password }) => async dispatch => {
 };
 
 // Login User
-export const login = (email, password) => async dispatch => {
+export const login = (email, password) => async (dispatch) => {
   const config = {
     headers: {
       "Content-Type": "application/json"
@@ -106,7 +106,7 @@ export const login = (email, password) => async dispatch => {
     const errors = err.response.data.errors;
 
     if (errors) {
-      errors.forEach(error => dispatch(setAlert(error.msg, "error")));
+      errors.forEach((error) => dispatch(setAlert(error.msg, "error")));
     }
 
     dispatch({
@@ -116,7 +116,7 @@ export const login = (email, password) => async dispatch => {
 };
 
 // Delete User
-export const deleteUser = email => async dispatch => {
+export const deleteUser = (email) => async (dispatch) => {
   const config = {
     headers: {
       "Content-Type": "application/json"
@@ -137,7 +137,7 @@ export const deleteUser = email => async dispatch => {
     dispatch(setAlert(`successfully deleted user: ${email}`, "success"));
 
     if (errors) {
-      errors.forEach(error => dispatch(setAlert(error.msg, "error")));
+      errors.forEach((error) => dispatch(setAlert(error.msg, "error")));
     }
 
     dispatch({
@@ -147,7 +147,6 @@ export const deleteUser = email => async dispatch => {
 };
 
 //Logout User, Clear profile
-export const logout = () => dispatch => {
-  dispatch({ type: CLEAR_PROFILE });
+export const logout = () => (dispatch) => {
   dispatch({ type: LOGOUT });
 };

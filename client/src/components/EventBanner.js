@@ -54,10 +54,10 @@ const EventBanner = ({ getImages, image: { image, loaded } }) => {
     // },
   ];
 
-  if (image) {
+  if (image && Array.isArray(image.url)) {
     image.url.forEach((url) => {
       let _url = {
-        original: url,
+        original: url
       };
       images.push(_url);
     });
@@ -70,7 +70,7 @@ const EventBanner = ({ getImages, image: { image, loaded } }) => {
       showPlayButton={false}
       autoPlay={true}
       slideDuration={500}
-      slideInterval={5000}
+      slideInterval={30000}
       useTranslate3D={true}
     />
   );
@@ -80,13 +80,13 @@ const EventBanner = ({ getImages, image: { image, loaded } }) => {
 
 EventBanner.propTypes = {
   image: PropTypes.object.isRequired,
-  getImages: PropTypes.func.isRequired,
+  getImages: PropTypes.func.isRequired
 };
 
 const mapStateToProps = (state) => ({
-  image: state.image,
+  image: state.image
 });
 
 export default connect(mapStateToProps, {
-  getImages,
+  getImages
 })(EventBanner);

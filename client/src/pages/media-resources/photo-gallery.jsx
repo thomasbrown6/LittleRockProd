@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
-import Gallery from "react-photo-gallery";
+//import Gallery from "react-photo-gallery";
 import ImageGallery from "react-image-gallery";
+import Gallery from "react-grid-gallery";
 
 import Layout from "../../components/Layout";
 import Banner from "../../components/Banner";
@@ -26,8 +27,12 @@ const PhotoGallery = ({ getGoogleAlbum, google: { album, loaded } }) => {
     album.map((image) => {
       let imageobject = {
         src: image,
-        width: width,
-        height: height
+        thumbnail:
+          "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg",
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+        isSelected: true,
+        caption: "After Rain (Jeshu John - designerspics.com)"
       };
       //console.log(`image: ${image}`);
       images.push(imageobject);
@@ -80,7 +85,7 @@ const PhotoGallery = ({ getGoogleAlbum, google: { album, loaded } }) => {
                   </Row>
                   <Row>
                     <Col xs={12}>
-                      <Gallery photos={images} />
+                      <Gallery images={images} />
                     </Col>
                   </Row>
                 </div>

@@ -1,10 +1,9 @@
 import axios from "axios";
 import { setAlert } from "./alert";
 import { GET_IMAGES, IMAGE_ERROR, CLEAR_IMAGE } from "./types";
-import { formatMs } from "@material-ui/core";
 
 // Upload a Image
-export const uploadEventImage = FormData => async dispatch => {
+export const uploadEventImage = (FormData) => async (dispatch) => {
   try {
     const config = {
       headers: {
@@ -29,7 +28,7 @@ export const uploadEventImage = FormData => async dispatch => {
     const errors = err.response.data.errors;
 
     if (errors) {
-      errors.forEach(error => dispatch(setAlert(error.msg, "error")));
+      errors.forEach((error) => dispatch(setAlert(error.msg, "error")));
     }
 
     dispatch({
@@ -40,7 +39,7 @@ export const uploadEventImage = FormData => async dispatch => {
 };
 
 // Get users daycares
-export const getImages = () => async dispatch => {
+export const getImages = () => async (dispatch) => {
   try {
     const res = await axios.get("/api/events/images");
 
@@ -59,7 +58,7 @@ export const getImages = () => async dispatch => {
 };
 
 // Delete image
-export const deleteImage = id => async dispatch => {
+export const deleteImage = (id) => async (dispatch) => {
   if (window.confirm("Are you sure you want to delete your image?")) {
     try {
       console.log(`deleting image at position: ${id}`);
@@ -73,7 +72,7 @@ export const deleteImage = id => async dispatch => {
       const errors = err.response.data.errors;
 
       if (errors) {
-        errors.forEach(error => dispatch(setAlert(error.msg, "error")));
+        errors.forEach((error) => dispatch(setAlert(error.msg, "error")));
       }
       dispatch({
         type: IMAGE_ERROR,

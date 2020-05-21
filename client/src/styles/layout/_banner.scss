@@ -17,200 +17,231 @@
 // }
 
 .banner-image {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
-	#banner {
-		@include vendor('align-items', 'center');
-		// @include vendor('background-image', 'url("/static/images/church-img2.jpg")');
-		@include vendor('display', 'flex');
-		@include padding(4em, 0, (2em, 0, 0, 0));
-		padding-bottom: 0;
-		padding-top: 0;
-		//background-attachment: fixed;
-		//background-position: top;
-		//background-repeat: no-repeat;
-		//background-size: cover;
-		border-bottom: 0 !important;
-		cursor: default;
-		height: 70vh;
-		margin-bottom: 0;
-		max-height: 24em;
-		//min-height: 50em;
-		min-height: 24em;
-		position: relative;
-		top: 0;
+#banner {
+  @include vendor("align-items", "center");
+  // @include vendor('background-image', 'url("/static/images/church-img2.jpg")');
+  @include vendor("display", "flex");
+  @include padding(4em, 0, (2em, 0, 0, 0));
+  padding-bottom: 0;
+  padding-top: 0;
+  //background-attachment: fixed;
+  //background-position: top;
+  //background-repeat: no-repeat;
+  //background-size: cover;
+  border-bottom: 0 !important;
+  cursor: default;
+  height: 70vh;
+  margin-bottom: 0;
+  max-height: 24em;
+  //min-height: 50em;
+  min-height: 24em;
+  position: relative;
+  top: 0;
 
-		&:after {
-			@include vendor('transition', 'opacity #{_duration(banner)} ease');
-			@include vendor('transition-delay', '0.75s');
-			@include vendor('pointer-events', 'none');
-			background-color: _palette(banner-bg);
-			content: '';
-			display: block;
-			height: 100%;
-			left: 0;
-			opacity: 0.85;
-			position: absolute;
-			top: 0;
-			width: 100%;
-			z-index: 1;
-		}
+  &:after {
+    @include vendor("transition", "opacity #{_duration(banner)} ease");
+    @include vendor("transition-delay", "0.75s");
+    @include vendor("pointer-events", "none");
+    background-color: _palette(banner-bg);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.85;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
 
-		h1 {
-			font-size: 1.5em;
-		}
+  h1 {
+    font-size: 1.5em;
+  }
 
-		> .inner {
-			@include vendor('transition', (
-				'opacity 1.5s ease',
-				'transform 0.5s ease-out',
-				'filter 0.5s ease',
-				'-webkit-filter 0.5s ease'
-			));
-			@include vendor('text-align', 'center');
-			@include vendor('text-transform', 'uppercase');
-			padding: 0 !important;
-			position: relative;
-			z-index: 2;
+  > .inner {
+    @include vendor(
+      "transition",
+      (
+        "opacity 1.5s ease",
+        "transform 0.5s ease-out",
+        "filter 0.5s ease",
+        "-webkit-filter 0.5s ease"
+      )
+    );
+    @include vendor("text-align", "center");
+    @include vendor("text-transform", "uppercase");
+    padding: 0 !important;
+    position: relative;
+    z-index: 2;
 
-			.image {
-				display: none;
-			}
+    .image {
+      display: none;
+    }
 
-			header {
-				width: auto;
+    header {
+      width: auto;
 
-				> :first-child {
-					width: auto;
+      > :first-child {
+        width: auto;
 
-					&:after {
-						max-width: 100%;
-					}
-				}
-			}
+        &:after {
+          max-width: 100%;
+        }
+      }
+    }
 
-			.content {
-				@include vendor('display', 'block');
-				@include vendor('align-items', 'center');
-				@include vendor('text-align', 'center');
-				margin: 0 0 _size(element-margin) 0;
+    .content {
+      @include vendor("display", "block");
+      @include vendor("align-items", "center");
+      @include vendor("text-align", "center");
+      margin: 0 0 _size(element-margin) 0;
 
-				> * {
-					margin-bottom: 0;
-				}
+      > * {
+        margin-bottom: 0;
+      }
 
-				> :first-child {
-					margin-left: 0;
-				}
+      > :first-child {
+        margin-left: 0;
+      }
 
-				p {
-					font-size: 0.7em;
-					font-weight: _font(weight-bold);
-					letter-spacing: _font(letter-spacing-alt);
-					text-transform: uppercase;
-				}
-			}
-		}
+      p {
+        font-size: 0.7em;
+        font-weight: _font(weight-bold);
+        letter-spacing: _font(letter-spacing-alt);
+        text-transform: uppercase;
+      }
+    }
+  }
 
-		> nav {
-			position: absolute;
-			bottom: 0;
-			width: 100%;
-			
-			.breadcrumb {
-				background: _palette(primary-light);
-				color: #fff;
-				font-weight: bold;
-				margin: 0;
-				padding: 10px;
-			}
-		}
+  > nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 
-		&.main {
-			position: relative;
-			text-align: center;
-		}
+    .breadcrumb {
+      background: _palette(primary-light);
+      color: #fff;
+      font-weight: bold;
+      margin: 0;
+      padding: 10px;
+    }
+  }
 
-		&.major {
-			// height: 70vh;
-			// min-height: 32em;
-			// max-height: 50em;
+  &.main {
+    position: relative;
+    text-align: center;
+  }
 
-			&.alt {
-				opacity: 0.75;
-			}
-		}
+  &.major {
+    // height: 70vh;
+    // min-height: 32em;
+    // max-height: 50em;
 
-		&.style1 { &:after { background-color: _palette(accent1); } }
-		&.style2 { &:after { background-color: _palette(accent2); } }
-		&.style3 { &:after { background-color: _palette(accent3); } }
-		&.style4 { &:after { background-color: _palette(accent4); } }
-		&.style5 { &:after { background-color: _palette(accent5); } }
-		&.style6 { &:after { background-color: _palette(accent7); } }
+    &.alt {
+      opacity: 0.75;
+    }
+  }
 
-		.body.is-loading & {
-			&:after {
-				opacity: 1.0;
-			}
+  &.style1 {
+    &:after {
+      background-color: _palette(accent1);
+    }
+  }
+  &.style2 {
+    &:after {
+      background-color: _palette(accent2);
+    }
+  }
+  &.style3 {
+    &:after {
+      background-color: _palette(accent3);
+    }
+  }
+  &.style4 {
+    &:after {
+      background-color: _palette(accent4);
+    }
+  }
+  &.style5 {
+    &:after {
+      background-color: _palette(accent5);
+    }
+  }
+  &.style6 {
+    &:after {
+      background-color: _palette(accent7);
+    }
+  }
 
-			> .inner {
-				@include vendor('filter', 'blur(0.125em)');
-				@include vendor('transform', 'translateX(-0.5em)');
-				opacity: 0;
-			}
-		}
+  .body.is-loading & {
+    &:after {
+      opacity: 1;
+    }
 
-		@include breakpoint(large) {
-			background-attachment: scroll;
-		}
+    > .inner {
+      @include vendor("filter", "blur(0.125em)");
+      @include vendor("transform", "translateX(-0.5em)");
+      opacity: 0;
+    }
+  }
 
-		@include breakpoint(small) {
-			@include padding(3em, 0, (2em, 0, 0, 0));
-			height: auto;
-			margin-bottom: -6.75em;
-			max-height: none;
-			min-height: 0;
-			top: -5.75em;
+  @include breakpoint(large) {
+    background-attachment: scroll;
+  }
 
-			h1 {
-				font-size: 2em;
-			}
+  @include breakpoint(small) {
+    @include padding(3em, 0, (2em, 0, 0, 0));
+    height: auto;
+    margin-bottom: -6.75em;
+    max-height: none;
+    min-height: 0;
+    top: -5.75em;
 
-			> .inner {
-				.content {
-					display: block;
+    h1 {
+      font-size: 2em;
+    }
 
-					> * {
-						margin-left: 0;
-						margin-bottom: _size(element-margin);
-					}
-				}
-			}
+    > .inner {
+      .content {
+        display: block;
 
-			&.major {
-				// height: auto;
-				// min-height: 0;
-				// max-height: none;
-			}
-		}
+        > * {
+          margin-left: 0;
+          margin-bottom: _size(element-margin);
+        }
+      }
+    }
 
-		@include breakpoint(xsmall) {
-			@include padding(4em, 0, (2em, 0, 0, 0));
+    &.major {
+      // height: auto;
+      // min-height: 0;
+      // max-height: none;
+    }
+  }
 
-			> .inner {
-				.content {
-					p {
-						br {
-							display: none;
-						}
-					}
-				}
-			}
+  @include breakpoint(xsmall) {
+    @include padding(4em, 0, (2em, 0, 0, 0));
 
-			&.major {
-				//@include padding(6em, 0, (2em, 0, 0, 0));
-			}
-		}
-	}
+    > .inner {
+      .content {
+        p {
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &.major {
+      //@include padding(6em, 0, (2em, 0, 0, 0));
+    }
+  }
+}
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  max-height: calc(150vh - 80px) !important;
+}

@@ -1,20 +1,16 @@
 import { combineReducers } from "redux";
 import alert from "./alert";
 import auth from "./auth";
-import profile from "./profile";
-import post from "./post";
-import daycare from "./daycare";
-import classroom from "./classroom";
-import student from "./student";
 import image from "./image";
 import google from "./google";
+import calendar from "./calendar";
+import livestream from "./livestream";
 
 export default combineReducers({
   alert,
   auth,
-  daycare,
-  classroom,
-  student,
   image,
   google,
+  calendar,
+  livestream
 });
