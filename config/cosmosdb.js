@@ -2,11 +2,11 @@ const mongoose = require("mongoose");
 const config = require("config");
 const { DB_CONN, DB_USER, DB_PW } = process.env;
 //const db = config.get('azureCosmo');
-const db =
-  "mongodb://daycaremanagerdb:5UaiyWu6u0GcsB4yxfiX6l3kcSU92JxotR9Ig29p38Jbiu3FtcHll1Q4ywkvS6a7lulRag4EFt6f4CHl0F8Hdw%3D%3D@daycaremanagerdb.documents.azure.com:10255/?ssl=true";
+//const db =
+//("mongodb://daycaremanagerdb:5UaiyWu6u0GcsB4yxfiX6l3kcSU92JxotR9Ig29p38Jbiu3FtcHll1Q4ywkvS6a7lulRag4EFt6f4CHl0F8Hdw%3D%3D@daycaremanagerdb.documents.azure.com:10255/?ssl=true");
 
-// const db =
-// "mongodb+srv://littlerock:littlerock@freecluster-ld28w.azure.mongodb.net/test?retryWrites=true&w=majority";
+const db =
+  "mongodb+srv://littlerock:littlerock@freecluster-ld28w.azure.mongodb.net/test?retryWrites=true&w=majority";
 
 const connectDB = async () => {
   try {
