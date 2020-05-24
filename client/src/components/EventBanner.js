@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
@@ -7,9 +7,16 @@ import ImageGallery from "react-image-gallery";
 import { getImages } from "../actions/images";
 
 const EventBanner = ({ getImages, image: { image, loaded } }) => {
+  const isInitialMount = useRef(true);
+
   useEffect(() => {
-    getImages();
-  }, [getImages]);
+    if (isInitialMount.current) {
+      isInitialMount.current = false;
+    } else {
+      // Your useEffect code here to be run on update
+      getImages();
+    }
+  });
 
   // if (!loaded || image === null) {
   //   getImages();
