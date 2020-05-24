@@ -21,7 +21,7 @@ router.get("/", auth, async (req, res) => {
   }
 });
 
-// @route   GET api/auth
+// @route   DELETE api/auth
 // @desc    Test route
 // @access  Public
 router.delete("/", auth, async (req, res) => {
