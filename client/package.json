@@ -23,6 +23,7 @@
     "postcss-easy-import": "^3.0.0",
     "postcss-loader": "^3.0.0",
     "raw-loader": "^4.0.0",
+    "node": "v12.15.0",
     "react": "^16.13.0",
     "react-animated-slider": "^2.0.0",
     "react-bootstrap": "^1.0.0-beta.17",
