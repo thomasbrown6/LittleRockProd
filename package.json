@@ -17,7 +17,6 @@
     "url": "git+https://github.com/thomasbrown6/LittleRockProd.git"
   },
   "cpu": [
-    "x64",
     "ia32"
   ],
   "author": "Thomas Brown",
