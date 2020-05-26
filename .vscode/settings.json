@@ -1,0 +1,8 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/3552d295-902b-4aaa-bb8c-dfdd27314a57/resourceGroups/LittleRockProd/providers/Microsoft.Web/sites/littlerockamezion-prod",
+    "appService.deploySubpath": "",
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ]
+}
