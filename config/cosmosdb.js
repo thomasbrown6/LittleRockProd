@@ -8,9 +8,12 @@ const { DB_CONN, DB_USER, DB_PW } = process.env;
 const db =
   "mongodb+srv://littlerock:littlerock@freecluster-ld28w.azure.mongodb.net/test?retryWrites=true&w=majority";
 
+const db2 =
+  "mongodb+srv://thomasbrown1125:tabrown11@daycaremanager-vxhfs.mongodb.net/test?retryWrites=true&w=majority";
+
 const connectDB = async () => {
   try {
-    await mongoose.connect(db, {
+    await mongoose.connect(db2, {
       useNewUrlParser: true,
       useCreateIndex: true,
       useUnifiedTopology: true,
