@@ -13,7 +13,7 @@ const db2 =
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(db2, {
+    await mongoose.connect(db, {
       useNewUrlParser: true,
       useCreateIndex: true,
       useUnifiedTopology: true,

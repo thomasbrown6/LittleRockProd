@@ -13,7 +13,7 @@ class SideNav extends React.Component {
     //this.handleHoverMenu = this.handleHoverMenu.bind(this)
   }
 
-  handleClick = value => {
+  handleClick = (value) => {
     if (value === this.state.activeIndex) {
       this.setState({
         activeIndex: null
@@ -48,7 +48,10 @@ class SideNav extends React.Component {
               </Link>
             </li>
             <li className="nav-li">
-              <span className="nav-link" onClick={event => this.handleClick(1)}>
+              <span
+                className="nav-link"
+                onClick={(event) => this.handleClick(1)}
+              >
                 Who We Are
               </span>
             </li>
@@ -68,7 +71,10 @@ class SideNav extends React.Component {
               url6="/who-we-are/stewards-and-trustees"
             />
             <li className="nav-li">
-              <span className="nav-link" onClick={event => this.handleClick(2)}>
+              <span
+                className="nav-link"
+                onClick={(event) => this.handleClick(2)}
+              >
                 Get Connected
               </span>
             </li>
@@ -86,7 +92,10 @@ class SideNav extends React.Component {
               url6="/get-connected/contact-us"
             />
             <li className="nav-li">
-              <span className="nav-link" onClick={event => this.handleClick(3)}>
+              <span
+                className="nav-link"
+                onClick={(event) => this.handleClick(3)}
+              >
                 Ministries
               </span>
             </li>
@@ -106,7 +115,10 @@ class SideNav extends React.Component {
               url7="/ministries/men"
             />
             <li className="nav-li">
-              <span className="nav-link" onClick={event => this.handleClick(4)}>
+              <span
+                className="nav-link"
+                onClick={(event) => this.handleClick(4)}
+              >
                 News & Events
               </span>
             </li>
@@ -114,9 +126,14 @@ class SideNav extends React.Component {
               hidden={this.state.activeIndex === 4 ? "" : "hide"}
               item1="Event Flyers"
               url1="/events/event-flyers"
+              item2="Calendar"
+              url2="/events/calendar"
             />
             <li className="nav-li">
-              <span className="nav-link" onClick={event => this.handleClick(5)}>
+              <span
+                className="nav-link"
+                onClick={(event) => this.handleClick(5)}
+              >
                 Media & Resources
               </span>
             </li>
@@ -130,7 +147,10 @@ class SideNav extends React.Component {
               url3="/media-resources/news-letter"
             />
             <li className="nav-li">
-              <span className="nav-link" onClick={event => this.handleClick(6)}>
+              <span
+                className="nav-link"
+                onClick={(event) => this.handleClick(6)}
+              >
                 Quick Links
               </span>
             </li>
