@@ -18,9 +18,9 @@ const EventBanner = ({ getImages, image: { image, loaded } }) => {
     }
   });
 
-  // if (!loaded || image === null) {
-  //   getImages();
-  // }
+  if (!loaded || image === null) {
+    getImages();
+  }
 
   const images = [
     // {
