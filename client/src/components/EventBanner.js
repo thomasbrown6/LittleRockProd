@@ -7,16 +7,9 @@ import ImageGallery from "react-image-gallery";
 import { getImages } from "../actions/images";
 
 const EventBanner = ({ getImages, image: { image, loaded } }) => {
-  const isInitialMount = useRef(true);
-
   useEffect(() => {
-    if (isInitialMount.current) {
-      isInitialMount.current = false;
-    } else {
-      // Your useEffect code here to be run on update
-      getImages();
-    }
-  });
+    getImages();
+  }, [getImages]);
 
   if (!loaded || image === null) {
     getImages();
