@@ -32,14 +32,14 @@ export default class NewsLetter extends Component {
     this.setState({ numPages });
   };
 
-  onNextClick = e => {
+  onNextClick = (e) => {
     if (this.state.pageNumber < this.state.numPages) {
       this.setState({ pageNumber: this.state.pageNumber + 1 });
       e.preventDefault();
     }
   };
 
-  onPrevClick = e => {
+  onPrevClick = (e) => {
     if (this.state.pageNumber > 1) {
       this.setState({ pageNumber: this.state.pageNumber - 1 });
       e.preventDefault();
@@ -81,7 +81,7 @@ export default class NewsLetter extends Component {
                   </Container>
                   <Row>
                     <Col xs={12}>
-                      <div classname="center">
+                      <div className="center">
                         <Document
                           file="../../static/pdf/newsletter2.pdf"
                           onLoadSuccess={this.onDocumentLoadSuccess}

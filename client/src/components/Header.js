@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import Menu2 from "./Menu2";
 import DropdownMenu from "./DropdownMenu";
+import QuickLinks from "./QuickLinks";
 
 class Header extends React.Component {
   constructor(props) {
@@ -223,12 +224,12 @@ class Header extends React.Component {
                 }
                 onMouseLeave={(event) => this.handleLeave(5)}
               >
-                <DropdownMenu
+                <QuickLinks
                   Title_item1="African Methodist Episcopal Zion church Website"
                   URL_item1="https://amez.org/"
                   Title_item2="Watch Live Stream"
                   URL_item2="https://livestream.com/littlerockamezion/"
-                  Title_item3="WALKER for ZION 2020"
+                  Title_item3="WALKER FOR ZION 2020"
                   URL_item3="https://www.walkerforzion2020.com/"
                   Title_item4="Livingstone College"
                   URL_item4="https://livingstone.edu/"
