@@ -33,7 +33,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.7.12",
     "node": "^10.20.1",
-    "npm": "^6.11.3",
+    "npm": "^6.4.1",
     "request": "^2.88.0"
   },
   "devDependencies": {
