@@ -53,7 +53,8 @@ const WatchOnline = ({
       <div>
         <Banner
           id="banner"
-          headerText="Watch Online"
+          headerText=""
+          image={require("../../static/images/banners/watch-online.jpg")}
           Breadcrumb1="HOME"
           tag1="a"
           href1="/"
