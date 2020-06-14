@@ -44,7 +44,11 @@ const Menu2 = ({ auth: { isAuthenticated }, logout }) => {
         <div className="spacer" />
         <ul className="icons">
           <li>
-            <a href="#" target="_blank" className="icon fa-twitter">
+            <a
+              href="https://twitter.com/littlerockamez?lang=en"
+              target="_blank"
+              className="icon fa-twitter"
+            >
               <span className="label"></span>
             </a>
           </li>
@@ -58,7 +62,7 @@ const Menu2 = ({ auth: { isAuthenticated }, logout }) => {
             </a>
           </li>
           <li>
-            <a href="#" target="_blank" className="icon fa-instagram">
+            <a href="https://www.instagram.com/littlerockamezion/" target="_blank" className="icon fa-instagram">
               <span className="label"></span>
             </a>
           </li>

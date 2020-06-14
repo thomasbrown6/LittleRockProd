@@ -26,15 +26,38 @@ const Footer = (props) => (
       <ul className="icons">
         <li>
           <a
+            href="https://twitter.com/littlerockamez?lang=en"
+            target="blank"
+            className="icon alt fa-twitter"
+          >
+            <span className="label">Twitter</span>
+          </a>
+        </li>
+        <li>
+          <a
             href="https://www.facebook.com/LittleRockAMEZion/?rf=563132967169860"
             className="icon alt fa-facebook"
+            target="blank"
           >
             <span className="label">Facebook</span>
           </a>
         </li>
         <li>
-          <a className="icon alt fa-instagram">
+          <a
+            href="https://www.instagram.com/littlerockamezion/"
+            target="blank"
+            className="icon alt fa-instagram"
+          >
             <span className="label">Instagram</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/channel/UCZ3K2j4WbnJ_jqL6Wmqi4mA/featured"
+            target="_blank"
+            className="icon alt fa-youtube"
+          >
+            <span className="label"></span>
           </a>
         </li>
       </ul>
