@@ -21,7 +21,11 @@ export default () => (
           <div className="inner">
             <Row>
               <Col xs={12}>
-                <a href="/media-resources/watch-online" className="btn mtop-4">
+                <a
+                  href="https://livestream.com/littlerockamezion"
+                  target="blank"
+                  className="btn mtop-4"
+                >
                   Watch Live Stream
                 </a>
               </Col>
