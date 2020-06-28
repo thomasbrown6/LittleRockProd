@@ -23,7 +23,7 @@ export default () => (
               <Col xs={12}>
                 <a
                   href="https://livestream.com/littlerockamezion"
-                  target="blank"
+                  target="_blank"
                   className="btn mtop-4"
                 >
                   Watch Live Stream
